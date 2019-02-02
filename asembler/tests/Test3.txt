@@ -1,0 +1,10 @@
+.global a, b
+.text
+addgt a, r5
+x: addgt r4, 10
+jmp $a
+.data
+or r3[x], r7
+mov r1, &a
+divne r2, *123
+.end

@@ -1,0 +1,27 @@
+.text
+read_in:
+mov r4, *0xfffc
+iret
+START:
+mov r0, &read_in
+mov *0x0004, r0
+read_a:
+cmp r4, 0
+jmpeq $read_a
+mov a, r4
+mov r4, 0
+read_b:
+cmp r4, 0
+jmpeq $read_b
+mov b, r4
+mov r0, a
+add r0, b
+sub r0, 48
+mov *0xfffe, r0
+mov r0, 0x10
+mov *0xfffe, r0
+ret
+.data
+a:	.word 0
+b:	.word 0
+.end

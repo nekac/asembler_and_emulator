@@ -1,0 +1,31 @@
+.global t
+.text
+timer_int:
+push r0
+mov r0, cnt
+cmp r0, 0
+jmpeq $skip
+sub r0, 1
+mov cnt, r0
+mov *0xfffe, r0
+mov r0, 0x10
+mov *0xfffe, r0
+skip:
+pop r0
+iret
+read_int:
+mov r5, *0xfffc
+iret
+START:
+mov r0, &timer_int
+mov *0x0002, r0
+mov r0, &read_int
+mov *0x0004, r0
+wait:
+cmp r5, 0
+jmpeq $wait
+ret
+.data
+cnt: .word 123
+.end
+

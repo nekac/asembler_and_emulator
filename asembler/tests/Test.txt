@@ -1,0 +1,22 @@
+.global a, b
+.text
+mov r3, a
+mov r4, b
+moveq r5, 0
+addgt r5, r3
+mov c, r5
+jmp c
+jmp $c
+.data
+a: .char 100
+b: .char 200
+.char 123
+.skip 5
+.word c
+.skip 5
+.word 1000
+.long 23322332
+.bss
+.skip 9
+c: .skip 4
+.end

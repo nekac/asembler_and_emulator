@@ -1,0 +1,35 @@
+.text
+for:
+mov r0, r2
+mov r5, 0
+loop:
+mov r3, r1
+add r3, r2
+sub r3, r0
+mov *0xfffe, r3
+mov r3, 32
+mov *0xfffe, r3
+sub r0, 1
+add r5, 1
+cmp r5, r4
+moveq r3, 0x10
+cmp r5, r4
+moveq *0xfffe, r3
+cmp r5, r4
+moveq r5, 0
+cmp r0, 0
+jmpne $loop
+mov r3, 0x10
+mov *0xfffe, r3
+ret
+START:
+mov r1, 97
+mov r2, 26
+mov r4, 8
+call &for
+mov r1, 65
+mov r2, 10
+mov r4, 3
+call &for
+ret
+.end

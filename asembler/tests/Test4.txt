@@ -1,0 +1,26 @@
+.global a
+.global b
+.text
+mov r3, 100
+x: mov r4, 200
+moveq r5, 500
+iret
+y: addgt r5, r3
+mov c, r5
+jmp c
+z: jmp $c
+jmp $a
+.data
+.align 64
+jmp $b
+moveq r1, 20
+.long 1234
+mov d, r2
+.char 123
+.word y
+q: addgt r2, &d
+.word b
+.bss
+.align 64
+c: .skip 4
+.end

@@ -1,0 +1,14 @@
+.global x
+.global y,z
+.text
+.char 15
+.word 67
+label1:
+.data
+.long 116
+.rodata
+.align 64
+label2:
+.bss
+.skip 15
+.end

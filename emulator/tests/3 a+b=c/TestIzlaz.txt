@@ -1,0 +1,31 @@
+#id	#name	#sec	#size	#value	#vis
+0	UND	0	0	0	L
+1	.text	1	68	1000	L
+2	read_in	1	0	0	L
+3	START	1	0	6	L
+4	read_a	1	0	14	L
+5	read_b	1	0	30	L
+6	.data	6	4	1068	L
+7	a	6	0	0	L
+8	b	6	0	2	L
+#.ret.text
+#add	#type	#sym
+8	A	1
+18	A	6
+28	A	6
+2c	A	6
+30	A	6
+#.ret.data
+#add	#type	#sym
+#.text
+f5 90 fc ff f0 00 f5 00 
+00 00 f6 08 04 00 d1 80 
+00 00 01 e0 f8 ff f6 0c 
+00 00 f5 80 00 00 d1 80 
+00 00 01 e0 f8 ff f6 0c 
+02 00 f5 10 00 00 c1 10 
+02 00 c5 00 30 00 f6 08 
+fe ff f5 00 10 00 f6 08 
+fe ff e9 e0 
+#.data
+00 00 00 00 

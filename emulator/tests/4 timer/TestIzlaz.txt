@@ -1,0 +1,31 @@
+#id	#name	#sec	#size	#value	#vis
+0	UND	0	0	0	L
+1	t	0	0	0	G
+2	.text	2	70	1000	L
+3	timer_int	2	0	0	L
+4	skip	2	0	34	L
+5	read_int	2	0	38	L
+6	START	2	0	44	L
+7	wait	2	0	60	L
+8	.data	8	2	1070	L
+9	cnt	8	0	0	L
+#.ret.text
+#add	#type	#sym
+4	A	8
+14	A	8
+2e	A	2
+36	A	2
+#.ret.data
+#add	#type	#sym
+#.text
+e4 08 f5 10 00 00 d1 00 
+00 00 01 e0 14 00 c5 00 
+01 00 f6 08 00 00 f6 08 
+fe ff f5 00 10 00 f6 08 
+fe ff e9 00 f0 00 f5 b0 
+fc ff f0 00 f5 00 00 00 
+f6 08 02 00 f5 00 26 00 
+f6 08 04 00 d1 a0 00 00 
+01 e0 f8 ff e9 e0 
+#.data
+7b 00 

@@ -1,0 +1,23 @@
+#id	#name	#sec	#size	#value	#vis
+0	UND	0	0	0	L
+1	.text	1	66	3e8	L
+2	for	1	0	3e8	L
+3	loop	1	0	3ee	L
+4	START	1	0	42c	L
+#.ret.text
+#add	#type	#sym
+52	A	1
+62	A	1
+f5 0a f5 a0 00 00 f5 69 
+c1 6a c5 68 f6 0b fe ff 
+f5 60 20 00 f6 0b fe ff 
+c5 00 01 00 c1 a0 01 00 
+d1 ac 35 60 10 00 d1 ac 
+36 0b fe ff d1 ac 35 a0 
+00 00 d1 00 00 00 41 e0 
+cc ff f5 60 10 00 f6 0b 
+fe ff e9 e0 f5 20 61 00 
+f5 40 1a 00 f5 80 08 00 
+ec 00 e8 03 f5 20 41 00 
+f5 40 0a 00 f5 80 03 00 
+ec 00 e8 03 e9 e0 

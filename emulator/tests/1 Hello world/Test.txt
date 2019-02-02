@@ -1,0 +1,30 @@
+.text
+START:
+mov r1, 72
+mov *0xfffe, r1
+mov r1, 101
+mov *0xfffe, r1
+mov r1, 108
+mov *0xfffe, r1
+mov r1, 108
+mov *0xfffe, r1
+mov r1, 111
+mov *0xfffe, r1
+mov r1, 32
+mov *0xfffe, r1
+mov r1, 119
+mov *0xfffe, r1
+mov r1, 111
+mov *0xfffe, r1
+mov r1, 114
+mov *0xfffe, r1
+mov r1, 108
+mov *0xfffe, r1
+mov r1, 100
+mov *0xfffe, r1
+mov r1, 33
+mov *0xfffe, r1
+mov r1, 0x10
+mov *0xfffe, r1
+ret
+.end

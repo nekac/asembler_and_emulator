@@ -1,0 +1,15 @@
+.global a,b
+.text
+mov c, r2
+x: jmp c
+.data
+diveq r5[b], r1
+y: .skip 2
+jmp $a
+.rodata
+.align 16
+oreq y, r2
+.bss
+.skip 5
+c: .align 2
+.end

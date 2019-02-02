@@ -1,0 +1,21 @@
+#id	#name	#sec	#size	#value	#vis
+0	UND	0	0	0	L
+1	.text	1	106	1000	L
+2	START	1	0	0	L
+#.ret.text
+#add	#type	#sym
+#.text
+f5 20 48 00 f6 09 fe ff 
+f5 20 65 00 f6 09 fe ff 
+f5 20 6c 00 f6 09 fe ff 
+f5 20 6c 00 f6 09 fe ff 
+f5 20 6f 00 f6 09 fe ff 
+f5 20 20 00 f6 09 fe ff 
+f5 20 77 00 f6 09 fe ff 
+f5 20 6f 00 f6 09 fe ff 
+f5 20 72 00 f6 09 fe ff 
+f5 20 6c 00 f6 09 fe ff 
+f5 20 64 00 f6 09 fe ff 
+f5 20 21 00 f6 09 fe ff 
+f5 20 10 00 f6 09 fe ff 
+e9 e0 

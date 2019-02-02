@@ -1,0 +1,36 @@
+#id	#name	#sec	#size	#value	#vis
+0	UND	0	0	0	L
+1	a	0	0	0	G
+2	b	0	0	0	G
+3	.text	3	8	1000	L
+4	x	3	0	4	L
+5	.data	5	10	1008	L
+6	y	5	0	4	L
+7	.rodata	7	10	1018	L
+8	.bss	8	6	1028	L
+9	c	8	0	5	L
+
+#.ret.text
+#add	#type	#sym
+2	A	8
+6	A	8
+
+#.ret.data
+#add	#type	#sym
+2	A	2
+8	R	1
+
+#.ret.rodata
+#add	#type	#sym
+8	A	5
+
+#.text
+f6 0a 05 00 f5 f0 05 00 
+
+#.data
+0f a9 00 00 00 00 c1 e0 
+fe ff 
+
+#.rodata
+00 00 00 00 00 00 1a 0a 
+04 00 
